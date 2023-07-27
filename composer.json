@@ -1,0 +1,25 @@
+{
+    "name": "mr_ulloa/lovel-soft",
+    "description": "LovelSoft Project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\": "./controllers",
+            "Model\\": "./models",
+            "Classes\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "AaronUlloa",
+            "email": "aaronmars77@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "vlucas/phpdotenv": "^5.4",
+        "intervention/image": "^2.7",
+        "ext-mysqli": "*"
+    }
+}
