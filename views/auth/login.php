@@ -27,7 +27,7 @@
             <input type="submit" class="forms__submit" value="Iniciar Sesión">
         </form>
         <div class="actions">
-            <a href="/registro" class="actions__link">¿Aun no tienes una cuenta? Registrarse ahora.</a>
-            <a href="/olvide" class="actions__link">¿Olvidaste tu Password?.</a>
+            <a href="/registro" class="actions__enlace">¿Aun no tienes una cuenta? Registrarse ahora.</a>
+            <a href="/olvide" class="actions__enlace">¿Olvidaste tu Password?.</a>
         </div>
 </main>
