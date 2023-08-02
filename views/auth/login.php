@@ -2,7 +2,7 @@
         <h2 class="auth__heading"><?php echo $titulo; ?></h2>
         <p class="auth__text">Inicia sesion en Lovelsoft</p>
 
-        <form method="POST" class="forms">
+        <form method="POST" action="/login" class="forms">
             <div class="forms__campo">
                 <label for="email" class="forms__label">Email</label>
                 <input
