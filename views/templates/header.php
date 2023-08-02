@@ -5,25 +5,21 @@
 			<!-- Topbar -->
 			<div class="top-bar">
 				<div class="content-topbar flex-sb-m h-full container">
-					<div class="left-top-bar">
-						Free shipping for standard order over $100
+					<div class="top-bar__left">
+						Welcome: Ulloa
 					</div>
 
-					<div class="right-top-bar flex-w h-full">
+					<div class="top-bar__right flex-w h-full">
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
 							Help & FAQs
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							My Account
+							Mi Cuenta
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							EN
-						</a>
-
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							USD
+							Salir
 						</a>
 					</div>
 				</div>
@@ -34,37 +30,29 @@
 					
 					<!-- Logo desktop -->		
 					<a href="#" class="logo">
-						<img src="/build/img/portada.webp" alt="IMG-LOGO">
+						<img src="/build/img/portada.webp" alt="Tienda Virtual">
 					</a>
 
 					<!-- Menu desktop -->
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Home</a>
+								<a href="index.html">Inicio</a>
 							</li>
 
 							<li>
-								<a href="product.html">Shop</a>
-							</li>
-
-							<li class="label1" data-label1="hot">
-								<a href="shoping-cart.html">Features</a>
+								<a href="product.html">Tienda</a>
 							</li>
 
 							<li>
-								<a href="blog.html">Blog</a>
+								<a href="about.html">Nosotros</a>
 							</li>
 
 							<li>
-								<a href="about.html">About</a>
-							</li>
-
-							<li>
-								<a href="contact.html">Contact</a>
+								<a href="contact.html">Contacto</a>
 							</li>
 						</ul>
-					</div>	
+					</div>
 
 					<!-- Icon header -->
 					<div class="wrap-icon-header flex-w flex-r-m">

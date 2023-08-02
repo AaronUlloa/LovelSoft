@@ -527,4 +527,23 @@ h3 {
 .horas__hora--deshabilitada:hover {
   cursor: not-allowed;
 }
+
+.top-bar {
+  height: 40px;
+  background-color: #222;
+}
+.top-bar__left {
+  font-family: Poppins-Regular;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #b2b2b2;
+}
+.top-bar__right, .top-bar a {
+  font-family: Poppins-Regular;
+  font-size: 12px;
+  line-height: 1.8;
+  height: 100%;
+  color: #b2b2b2;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
 /*# sourceMappingURL=app.css.map */
