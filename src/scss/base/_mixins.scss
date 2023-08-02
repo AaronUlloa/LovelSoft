@@ -47,17 +47,17 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin contenedor {
+@mixin container {
     width: min(95%, 140rem);
     margin: 0 auto;
 }
 
-@mixin contenedor-md {
+@mixin container-md {
     width: min(95%, 80rem);
     margin: 0 auto;
 }
 
-@mixin contenedor-sm {
+@mixin container-sm {
     width: min(95%, 60rem);
     margin: 0 auto;
 }

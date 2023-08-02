@@ -8,18 +8,17 @@
                 <input
                         type="email"
                         class="forms__input"
-                        placeholder="Tu Email"
+                        placeholder="Your Email Here"
                         id="email"
                         name="email"
                 >
             </div>
-
             <div class="forms__campo">
-                <label for="password" class="formulario__label">Password</label>
+                <label for="password" class="forms__label">Password</label>
                 <input
                         type="password"
                         class="forms__input"
-                        placeholder="Tu Password"
+                        placeholder="Your Password Here"
                         id="password"
                         name="password"
                 >
@@ -28,7 +27,7 @@
             <input type="submit" class="forms__submit" value="Iniciar Sesión">
         </form>
         <div class="actions">
-            <a href="/registro" class="actions__link">Aun no tienes una cuenta? Registrarse ahora.</a>
-            <a href="/olvide" class="actions__link">Olvidaste tu Password?.</a>
+            <a href="/registro" class="actions__link">¿Aun no tienes una cuenta? Registrarse ahora.</a>
+            <a href="/olvide" class="actions__link">¿Olvidaste tu Password?.</a>
         </div>
 </main>
