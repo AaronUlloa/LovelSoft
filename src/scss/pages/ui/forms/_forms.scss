@@ -4,6 +4,7 @@
 .forms {
     display: flex;
     flex-direction: column;
+    background-color: #007df4;
     &__fieldset {
         border: none;
         margin-top: 1rem;
@@ -53,7 +54,7 @@
             border: none;
         }
         &--sociales {
-            @extend .formulario__input;
+            @extend .forms__input;
             flex: 1;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
