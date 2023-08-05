@@ -91,7 +91,7 @@
 @mixin logo {
     color: v.$blanco;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     white-space: nowrap;
     @include desktop {
         text-align: left;
@@ -151,10 +151,6 @@
     }
 }
 
-@mixin shadow {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
 @mixin reset-lista {
     margin: 0;
     padding: 0;
@@ -191,4 +187,55 @@
 
 @mixin bg-gradient($bg_color) {
     background-image: linear-gradient(to left top, $bg_color, lighten($bg_color, 15%));
+}
+
+@mixin links{
+    color: v.$blanco;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: v.$bold;
+
+    &:hover {
+        color: orange;
+        cursor: pointer;
+    }
+}
+
+@mixin links-dp{
+    color: v.$gris-oscuro;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: v.$bold;
+
+    &:hover {
+        color: orange;
+        cursor: pointer;
+    }
+}
+@mixin reset-lista {
+  margin: 8;
+  padding: 0;
+  list-style: none;
+}
+@mixin shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@mixin boton-sm($bgColor, $colorTexto) {
+    background-color: $bgColor;
+    padding: 1.5rem 4rem;
+    color: $colorTexto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  
+    &:hover {
+      background-color: darken($bgColor, 10%);
+      cursor: pointer;
+    }
 }
