@@ -40,7 +40,7 @@
         cursor: pointer;
     }
 }
-
+  
 @mixin grid($columnas, $espaciado ) {
     display: grid;
     gap: $espaciado;
@@ -88,8 +88,18 @@
     background-clip: text;
     color: transparent;
 }
+@mixin links-center{
+    color: v.$gris-oscuro;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: v.$bold;
+    &:hover {
+        color: orange;
+        cursor: pointer;
+    }
+}
 @mixin logo {
-    color: v.$blanco;
+    // color: v.$blanco;
     text-align: center;
     margin-bottom: 1rem;
     white-space: nowrap;

@@ -1,37 +1,28 @@
 <header class="header">
-	<div class="navbar">
-		<div>
-			<a href="/">
-				<div class="navbar__logo">
-					<picture>
+	<div class="header__container">
+		<div class="top-bar">
+			<div class="top-bar__container">
+				<a href="/">
+					<picture class="top-bar__logo">
 						<source srcset="build/img/logo-01.avif" type="image/avif">
 						<source srcset="build/img/logo-01.webp" type="image/webp">
 						<img loading="lazy" width="133" height="17" src="build/img/logo-01.jpg" alt="Imagen DevWebcamp">
 					</picture>
-				</div>
-			</a>
+				</a>
+				<ul class="top-bar__link top-bar__navigation">
+					<li><a class="top-bar__link top-bar__btn-nav" href="/">Inicio</a></li>
+					<li><a class="top-bar__link top-bar__btn-nav" href="/">Tienda</a></li>
+					<li><a class="top-bar__link top-bar__btn-nav" href="#">Carrito</a></li>
+					<li><a class="top-bar__link top-bar__btn-nav" href="#">Nosotros</a></li>
+					<li><a class="top-bar__link top-bar__btn-nav" href="#">SUCURSALES</a></li>
+					<li><a class="top-bar__link top-bar__btn-nav" href="#">Contacto</a></li>
+				</ul>
+				<nav class="top-bar__navigation">
+					<a class="top-bar__btn top-bar__link-nav" href="/">Logout</a>
+					<a class="top-bar__btn top-bar__link-nav" href="/login">Login</a>
+					<a class="top-bar__btn top-bar__link-nav" href="/registro">Registrar</a>
+				</nav>
+			</div>
 		</div>
-		<ul class="navbar__link">
-			<li><a class="links__go" href="/">Home</a></li>
-			<li><a class="links__go" href="/">Pubicar</a></li>
-			<li><a class="links__go" href="#">Categorias</a></li>
-			<li><a class="links__go" href="#">Carrito</a></li>
-		</ul>
-		<div class="action">
-			<a class="action__btn" href="/">Logout</a>
-			<a class="action__btn" href="/">Login</a>
-			<a class="action__btn" href="/">Registrar</a>
-		</div>
-		<div class="toggle_btn">
-			<i class="fa-solid fa-bars"></i>
-		</div>
-	</div>
-
-	<div class="dropdown_menu">
-		<li><a class="dropdown_menu__links" href="/">Home</a></li>
-		<li><a class="dropdown_menu__links" href="#">Pubicar</a></li>
-		<li><a class="dropdown_menu__links" href="#">Categorias</a></li>
-		<li><a class="dropdown_menu__links" href="#">Carrito</a></li>
-		<li><a class="dropdown_menu__links action__btn" href="/">Logout</a></li>
 	</div>
 </header>
