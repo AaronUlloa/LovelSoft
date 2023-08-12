@@ -2,53 +2,28 @@
 @use 'base/variables' as v;
 
 .top-bar{
-
-  background-position: center;
-  position: relative;
-
-  &__container{
+  min-height: 2rem;
+  background-color: v.$negro;
+  
+  &__information{
     @include m.container;
     display: flex;
     flex-direction: column;
-    @include m.desktop{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-  }
-
-  &__logo{
-    text-align: center;
-    @include m.texto-fluido(1rem, 4rem);
-    @include m.tablet {
-        text-align: left;
-        display: inline-block;
-    }
-  }
-
-  &__navigation{
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
     @include m.tablet{
-        justify-content: flex-end;
+      flex-direction: row;
+      justify-content: space-between;
     }
-    
   }
 
-  &__btn-nav{
-    @include m.links-center;
+  &__data{
+    color: v.$blanco;
+    font-size: v.$delgada;
   }
 
-  &__link-nav{
-    color: v.$negro;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    font-weight: v.$bold;
-  }
-
-  &__btn{
-      
+  &__register{
+    color: v.$blanco;
+    font-size: v.$delgada;
   }
 }

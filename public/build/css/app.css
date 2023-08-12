@@ -533,61 +533,75 @@ h3 {
 }
 
 .top-bar {
-  background-position: center;
-  position: relative;
+  min-height: 2rem;
+  background-color: #1a1b15;
 }
-.top-bar__container {
+.top-bar__information {
   width: min(95%, 140rem);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
-@media (min-width: 1024px) {
-  .top-bar__container {
+@media (min-width: 768px) {
+  .top-bar__information {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
 }
-.top-bar__logo {
-  text-align: center;
-  font-size: clamp(1rem, -0.8rem + 10vw, 4rem);
+.top-bar__data {
+  color: #FFFFFF;
+  font-size: 300;
 }
-@media (min-width: 768px) {
-  .top-bar__logo {
-    text-align: left;
-    display: inline-block;
-  }
+.top-bar__register {
+  color: #FFFFFF;
+  font-size: 300;
 }
-.top-bar__navigation {
-  padding: 1rem 0;
+
+.bar {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
 }
 @media (min-width: 768px) {
-  .top-bar__navigation {
-    justify-content: flex-end;
+  .bar {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-.top-bar__btn-nav {
+.bar__navigation {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bar__navigation {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+.bar__elements {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bar__elements {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+.navigation__link {
   color: #1E293B;
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
 }
-.top-bar__btn-nav:hover {
+.navigation__link:hover {
   color: orange;
   cursor: pointer;
-}
-.top-bar__link-nav {
-  color: #1a1b15;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.header {
-  min-height: 60rem;
-  background-image: image-set(url(../img/slide-01.webp) 1x, url(../img/slide-01.avif) 1x, url(../img/slide-01.jpg) 1x);
 }
 /*# sourceMappingURL=app.css.map */
