@@ -5,3 +5,4 @@ deployment.xml
 webServers.xml
 codeStyleConfig.xml
 .DS_Store
+/src/
