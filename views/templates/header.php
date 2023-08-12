@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header inicio">
 	<div class="container">
 		<div class="top-bar">
 			<div class="top-bar__information">
@@ -7,7 +7,7 @@
 				</div>
 				<div>
 					<a href="#" class="top-bar__register">
-						My Account
+						Mi Cuenta
 					</a>
 				</div>
 			</div>	

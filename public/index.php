@@ -30,6 +30,10 @@ $router->post('/reestablecer', [AuthController::class, 'reestablecer']);
 $router->get('/mensaje', [AuthController::class, 'mensaje']);
 $router->get('/confirmar-cuenta', [AuthController::class, 'confirmar']);
 
+// Area de administración
+$router->get('/admin/dashboard', [\Controllers\DashboardController::class, 'index']);
+
+
 
 $router->comprobarRutas();
 

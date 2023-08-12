@@ -1,7 +1,9 @@
 <main class="auth">
         <h2 class="auth__heading"><?php echo $titulo; ?></h2>
         <p class="auth__text">Inicia sesion en Lovelsoft</p>
-
+        <?php 
+            require_once __DIR__ . '/../templates/alertas.php';
+        ?>
         <form method="POST" action="/login" class="forms">
             <div class="forms__campo">
                 <label for="email" class="forms__label">Email</label>
@@ -11,6 +13,7 @@
                         placeholder="Your Email Here"
                         id="email"
                         name="email"
+                        value="<?php echo $usuario->email; ?>"
                 >
             </div>
             <div class="forms__campo">

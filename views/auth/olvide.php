@@ -1,7 +1,9 @@
 <main class="auth">
     <h2 class="auth__heading"><?php echo $titulo; ?></h2>
     <p class="auth__texto">Recupera tu acceso a Lovelsoft</p> 
-
+    <?php
+        require_once __DIR__ . '/../templates/alertas.php';
+    ?>
     <form method="POST" action="/olvide" class="forms">
         <div class="forms__campo">
             <label for="email" class="forms__label">Email</label>
