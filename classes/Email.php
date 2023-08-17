@@ -19,32 +19,34 @@ class Email {
 
     public function enviarConfirmacion() {
 
-         // create a new object
-         $mail = new PHPMailer();
-         $mail->isSMTP();
-         $mail->Host = $_ENV['EMAIL_HOST'];
-         $mail->SMTPAuth = true;
-         $mail->Port = $_ENV['EMAIL_PORT'];
-         $mail->Username = $_ENV['EMAIL_USER'];
-         $mail->Password = $_ENV['EMAIL_PASS'];
-     
-         $mail->setFrom('cuentas@lovelsoft.com');
-         $mail->addAddress($this->email, $this->nombre);
-         $mail->Subject = 'Confirma tu Cuenta';
+        // create a new object
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = $_ENV['EMAIL_HOST'];
+        $mail->SMTPAuth = true;
+        // $mail->Port = $_ENV['EMAIL_PORT'];
+        $mail->Username = $_ENV['EMAIL_USER'];
+        $mail->Password = $_ENV['EMAIL_PASS'];
+        // $mail->SMTPSecure = 'ssl';
+        // $mail->Port = $_ENV['EMAIL_PORT'];
+    
+        $mail->setFrom('info@lovelsoft.com');
+        $mail->addAddress($this->email, $this->nombre);
+        $mail->Subject = 'Confirma tu Cuenta';
 
-         // Set HTML
-         $mail->isHTML(TRUE);
-         $mail->CharSet = 'UTF-8';
+        // Set HTML
+        $mail->isHTML(TRUE);
+        $mail->CharSet = 'UTF-8';
 
-         $contenido = '<html>';
-         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has Registrado Correctamente tu cuenta en Lovelsoft; pero es necesario confirmarla</p>";
-         $contenido .= "<p>Presiona aquí: <a href='" . $_ENV['HOST'] . "/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";       
-         $contenido .= "<p>Si tu no creaste esta cuenta; puedes ignorar el mensaje</p>";
-         $contenido .= '</html>';
-         $mail->Body = $contenido;
+        $contenido = '<html>';
+        $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has Registrado Correctamente tu cuenta en Lovelsoft; pero es necesario confirmarla</p>";
+        $contenido .= "<p>Presiona aquí: <a href='" . $_ENV['HOST'] . "/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";       
+        $contenido .= "<p>Si tu no creaste esta cuenta; puedes ignorar el mensaje</p>";
+        $contenido .= '</html>';
+        $mail->Body = $contenido;
 
-         //Enviar el mail
-         $mail->send();
+        //Enviar el mail
+        $mail->send();
 
     }
 
@@ -59,7 +61,7 @@ class Email {
         $mail->Username = $_ENV['EMAIL_USER'];
         $mail->Password = $_ENV['EMAIL_PASS'];
     
-        $mail->setFrom('cuentas@lovelsoft.com');
+        $mail->setFrom('compras@lovelsoft.com');
         $mail->addAddress($this->email, $this->nombre);
         $mail->Subject = 'Reestablece tu password';
 
