@@ -657,7 +657,7 @@ h3 {
 }
 .dashboard__header {
   background-color: rgba(30, 41, 59, 0.4);
-  padding: 2rem;
+  padding: 1rem;
 }
 .dashboard__header-grid {
   display: flex;
@@ -698,5 +698,50 @@ h3 {
 .dashboard__submit-logout:hover {
   color: #007df4;
   cursor: pointer;
+}
+.dashboard__grid {
+  display: flex;
+  flex: 1;
+}
+.dashboard__sidebar {
+  background-color: #e6edf4;
+  width: 12rem;
+}
+.dashboard__menu {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.dashboard__enlace {
+  color: #940094;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  transition: 300ms background-color ease-in-out, 300ms color ease, 300ms border-radius ease;
+}
+.dashboard__enlace:hover {
+  background-color: #b1c7dd;
+  color: #00625f;
+  border-radius: 1rem;
+}
+.dashboard__icon {
+  font-size: 2rem;
+}
+.dashboard__menu-texto {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.dashboard__contenido {
+  width: 100%;
+  padding: 1rem 1rem 3rem 1rem;
+}
+@media (min-width: 768px) {
+  .dashboard__contenido {
+    padding: 1rem 5rem 3rem 5rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */
