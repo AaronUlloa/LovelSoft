@@ -33,6 +33,9 @@ $router->get('/confirmar-cuenta', [AuthController::class, 'confirmar']);
 // Area de administración
 $router->get('/admin/dashboard', [\Controllers\DashboardController::class, 'index']);
 
+$router->get('/admin/productos', [\Controllers\ProductosController::class, 'index']);
+$router->get('/admin/pedidos', [\Controllers\PedidosController::class, 'index']);
+$router->get('/admin/clientes', [\Controllers\ClientesController::class, 'index']);
 
 
 $router->comprobarRutas();
