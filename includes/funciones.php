@@ -10,3 +10,7 @@ function s($html) : string {
     $s = htmlspecialchars($html);
     return $s;
 }
+
+function actual_page($path){
+    return str_contains($_SERVER['PATH_INFO'], $path) ? true : false;
+}
