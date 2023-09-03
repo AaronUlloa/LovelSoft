@@ -12,5 +12,5 @@ function s($html) : string {
 }
 
 function actual_page($path){
-    return str_contains($_SERVER['PATH_INFO'], $path) ? true : false;
+    return str_contains($_SERVER['PATH_INFO'], $path) ? true : false; 
 }
