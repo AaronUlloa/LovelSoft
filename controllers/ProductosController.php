@@ -12,8 +12,10 @@ class ProductosController
         ]);
     }
     public static function crear(Router $router){
+        $alertas = [];
         $router->render('admin/productos/crear',[
-            'title' => 'Agregar Producto'
+            'title' => 'Agregar Producto',
+            'alertas' => $alertas
         ]);
     }
 }

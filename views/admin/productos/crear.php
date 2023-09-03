@@ -11,7 +11,7 @@
     <?php include_once __DIR__. './../../templates/alertas.php' ?>
 
     <form action="/admin/productos/crear" enctype="multipart/form-data" class="forms" method="POST">
-        
-        <input type="submit" value="Agregar Producto">
+        <?php include_once __DIR__. '/formulario.php' ?>
+        <input type="submit" value="Agregar Producto" class="forms__submit forms__submit--registrar">
     </form>
 </div>

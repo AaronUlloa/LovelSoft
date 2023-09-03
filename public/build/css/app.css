@@ -478,6 +478,7 @@ h3 {
 }
 .forms__submit--registrar, .forms__submit--full {
   width: 100%;
+  border-radius: 2rem;
 }
 
 .actions, .actions--centrar {
@@ -748,6 +749,7 @@ h3 {
   .dashboard__contenedor-boton {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 5rem;
   }
 }
 .dashboard__boton {
@@ -774,5 +776,15 @@ h3 {
     width: auto;
     border-radius: 5rem;
   }
+}
+.dashboard__contenedor, .dashboard__formularios {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.dashboard__formularios {
+  width: min(95%, 80rem);
+  margin: 0 auto;
 }
 /*# sourceMappingURL=app.css.map */
