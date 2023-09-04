@@ -39,5 +39,36 @@
         value="<?php echo $producto->code ?? ''; ?>"
         >
     </div>
-
+    <div class="forms__campo">
+        <label for="categoria" class="forms__label">Categoria</label>
+        <select name="categoria" id="categoria" class="forms__input">
+            <option value="">Casa</option>
+            <option value="">Carros</option>
+        </select> 
+    </div>
+    <div class="forms__campo">
+        <label for="imagen" class="forms__label">Precio</label>
+        <input 
+        type="file"
+        class="forms__input forms__input--file"
+        id="imagen"
+        name="imagen"
+        >
+    </div>
+</fieldset>
+<fieldset class="forms__fieldset">
+    <legend class="forms__legend">Informacion Extra</legend>
+    <div class="forms__campo">
+        <label for="tagsInput" class="forms__label">Tags de Busqueda (Separadas por Coma)</label>
+        <input 
+        type="number"
+        class="forms__input"
+        id="tagsInput"
+        name="tagsInput"
+        placeholder="Ej. Apple, Windows, Mac"
+        >
+        <div id="tags" class="forms__listado">
+            <input type="hidden" name="tags" value="<?php echo $producto->tags ?? ''; ?>">
+        </div>
+    </div>
 </fieldset>

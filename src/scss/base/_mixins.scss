@@ -40,7 +40,7 @@
         cursor: pointer;
     }
 }
-  
+
 @mixin grid($columnas, $espaciado ) {
     display: grid;
     gap: $espaciado;

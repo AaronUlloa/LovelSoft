@@ -430,6 +430,9 @@ h3 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+.forms__input--file, .forms__select--file {
+  border: none;
+}
 .forms__radio {
   display: flex;
   gap: 2rem;
