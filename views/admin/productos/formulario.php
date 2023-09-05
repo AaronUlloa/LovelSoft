@@ -47,7 +47,7 @@
         </select> 
     </div>
     <div class="forms__campo">
-        <label for="imagen" class="forms__label">Precio</label>
+        <label for="imagen" class="forms__label">Imagen</label>
         <input 
         type="file"
         class="forms__input forms__input--file"
@@ -69,6 +69,24 @@
         >
         <div id="tags" class="forms__listado">
             <input type="hidden" name="tags" value="<?php echo $producto->tags ?? ''; ?>">
+        </div>
+    </div>
+</fieldset>
+
+<fieldset class="forms__fieldset">
+    <legend class="forms__legend">Informacion Extra</legend>
+    <div class="forms__campo">
+        <div class="forms__contenedor-icono">
+            <div class="forms__icono">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <input 
+                type="text"
+                class="forms__input--sociales"
+                id="precio"
+                name="precio"
+                placeholder="Codigo del Articulo"
+            >
         </div>
     </div>
 </fieldset>
