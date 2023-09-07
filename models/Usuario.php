@@ -3,20 +3,24 @@
 namespace Model;
 
 class Usuario extends ActiveRecord {
+
     protected static $tabla = 'usuarios';
-    protected static $columnasDB = ['id', 'nombre', 'apellido', 'email', 'password', 'confirmado', 'token', 'admin'];
-    
+    protected static $columnasDB = ['id', 'nombre', 'apellido', 'telefono', 'email', 'confirmado', 'password', 'token', 'idroles', 'admin', 'status'];
+
     public function __construct($args = [])
     {
         $this->id = $args['id'] ?? null;
         $this->nombre = $args['nombre'] ?? '';
         $this->apellido = $args['apellido'] ?? '';
+        $this->telefono = $args['telefono'] ?? '';
         $this->email = $args['email'] ?? '';
         $this->password = $args['password'] ?? '';
         $this->password2 = $args['password2'] ?? '';
-        $this->confirmado = $args['confirmado'] ?? 0;
         $this->token = $args['token'] ?? '';
+        $this->confirmado = $args['confirmado'] ?? 0;
+        $this->idroles = $args['idroles'] ?? '';
         $this->admin = $args['admin'] ?? 0;
+        $this->status = $args['status'] ?? 1;
     }
 
     // Validar el Login de Usuarios
@@ -53,6 +57,9 @@ class Usuario extends ActiveRecord {
         }
         if($this->password !== $this->password2) {
             self::$alertas['error'][] = 'Los password son diferentes';
+        }
+        if(!$this->idroles ) {
+            self::$alertas['error'][] = 'Elige un Rol para el Usuario';
         }
         return self::$alertas;
     }

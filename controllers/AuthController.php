@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Classes\Email;
+use Model\Roles;
 use Model\Usuario;
 use MVC\Router;
 
@@ -75,6 +76,7 @@ class AuthController
     {
         $alertas = [];
         $usuario = new Usuario();
+        $roles = Roles::all();
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -117,7 +119,8 @@ class AuthController
         $router->render('auth/registro', [
             'titulo' => 'Crea tu cuenta en LovelSoft',
             'usuario' => $usuario,
-            'alertas' => $alertas
+            'alertas' => $alertas,
+            'roles' => $roles
         ]);
     }
 

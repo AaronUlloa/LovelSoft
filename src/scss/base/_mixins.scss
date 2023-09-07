@@ -86,7 +86,7 @@
 @mixin texto-degradado($inicio, $final) {
     background: linear-gradient(to right, $inicio, $final);
     background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 @mixin links-center{
     color: v.$gris-oscuro;
@@ -98,12 +98,22 @@
         cursor: pointer;
     }
 }
+@mixin links-center-adm{
+    color: lighten(v.$gris-oscuro, 20);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: v.$bold;
+    &:hover {
+        color: orange;
+        cursor: pointer;
+    }
+}
+
 @mixin logo {
-    // color: v.$blanco;
+    color: v.$blanco;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     white-space: nowrap;
-    @include container-sm;
     @include desktop {
         text-align: left;
         margin: 0;
@@ -179,9 +189,10 @@
         background-color: v.$azul;
         padding: 1rem;
         border-radius: .5rem;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: v.$bold;
         color: v.$blanco;
+        cursor: pointer;
     }
 }
 

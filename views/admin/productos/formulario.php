@@ -61,10 +61,9 @@
     <div class="forms__campo">
         <label for="tagsInput" class="forms__label">Tags de Busqueda (Separadas por Coma)</label>
         <input 
-        type="number"
+        type="text"
         class="forms__input"
         id="tagsInput"
-        name="tagsInput"
         placeholder="Ej. Apple, Windows, Mac"
         >
         <div id="tags" class="forms__listado">
@@ -83,10 +82,40 @@
             <input 
                 type="text"
                 class="forms__input--sociales"
-                id="precio"
-                name="precio"
-                placeholder="Codigo del Articulo"
+                name="redes[facebook]"
+                placeholder="Facebook"
+                value="<?php echo $producto->facebook ?? ''; ?>"
             >
         </div>
     </div>
+
+    <div class="forms__campo">
+        <div class="forms__contenedor-icono">
+            <div class="forms__icono">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <input
+                    type="text"
+                    class="forms__input--sociales"
+                    name="redes[youtube]"
+                    placeholder="Youtube"
+                    value="<?php echo $producto->youtube ?? ''; ?>"
+            >
+        </div>
+    </div>
+    <div class="forms__campo">
+        <div class="forms__contenedor-icono">
+            <div class="forms__icono">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <input
+                    type="text"
+                    class="forms__input--sociales"
+                    name="redes[instagram]"
+                    placeholder="Youtube"
+                    value="<?php echo $producto->instagram ?? ''; ?>"
+            >
+        </div>
+    </div>
+
 </fieldset>
