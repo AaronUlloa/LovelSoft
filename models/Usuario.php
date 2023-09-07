@@ -58,7 +58,7 @@ class Usuario extends ActiveRecord {
         if($this->password !== $this->password2) {
             self::$alertas['error'][] = 'Los password son diferentes';
         }
-        if(!$this->idroles ) {
+        if(!$this->idroles || !filter_var($this->idroles, FILTER_VALIDATE_INT)) {
             self::$alertas['error'][] = 'Elige un Rol para el Usuario';
         }
         return self::$alertas;

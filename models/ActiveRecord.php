@@ -52,7 +52,6 @@ class ActiveRecord {
     // Crea el objeto en memoria que es igual al de la BD
     protected static function crearObjeto($registro) {
         $objeto = new static;
-
         foreach($registro as $key => $value ) {
             if(property_exists( $objeto, $key  )) {
                 $objeto->$key = $value;

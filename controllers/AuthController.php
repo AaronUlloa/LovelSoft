@@ -77,7 +77,6 @@ class AuthController
         $alertas = [];
         $usuario = new Usuario();
         $roles = Roles::all();
-
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $usuario->sincronizar($_POST);

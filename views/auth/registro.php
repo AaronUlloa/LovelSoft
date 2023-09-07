@@ -76,21 +76,15 @@
         </div>
         <div class="forms__campo">
             <label for="rol" class="forms__label">Tipo de Usuario</label>
-            <select
-                    name="rolid"
-                    id="rol"
-                    class="forms__select"
-            >
-                <option value="">- Seleccionar -</option>
+            <select name="idroles" id="idroles" class="forms__select">
+                <option value="">-- Seleccionar --</option>
                 <?php foreach ($roles as $rol) { ?>
-                    <option <?php echo ($usuario->idroles === $rol->id) ? 'selected' : ''?>
-                            value="<?php echo $rol->id; ?>"
-                    >
+                    <option <?php echo ($usuario->idroles === $rol->id) ? 'selected' : ''?> value="<?php echo $rol->id; ?>">
                         <?php echo $rol->nombre; ?>
                     </option>
                 <?php } ?>
             </select>
-            <input type="hidden" name="rol_id" value="<?php echo $usuario->idroles; ?>">
+
         </div>
 
         <input type="submit" class="forms__submit" value="Crear Cuenta">
