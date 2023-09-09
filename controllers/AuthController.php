@@ -35,6 +35,7 @@ class AuthController
                         $_SESSION['nombre'] = $usuario->nombre;
                         $_SESSION['apellido'] = $usuario->apellido;
                         $_SESSION['email'] = $usuario->email;
+                        $_SESSION['idroles'] = $usuario->idroles;
                         $_SESSION['admin'] = $usuario->admin ?? null;
                         
                          // Redirección 
@@ -76,7 +77,8 @@ class AuthController
     {
         $alertas = [];
         $usuario = new Usuario();
-        $roles = Roles::all();
+        $roles = Roles::all('DESC');
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $usuario->sincronizar($_POST);

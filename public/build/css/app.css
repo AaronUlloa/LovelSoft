@@ -499,7 +499,7 @@ h3 {
   font-weight: 300;
 }
 
-.horas {
+.product {
   margin: 8;
   padding: 0;
   list-style: none;
@@ -508,32 +508,32 @@ h3 {
   grid-template-columns: repeat(1, 1fr);
 }
 @media (min-width: 768px) {
-  .horas {
+  .product {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.horas__hora, .horas__hora--deshabilitada, .horas__hora--seleccionada {
+.product__contenedor {
   color: #007df4;
   border: 1px solid #007df4;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
 }
-.horas__hora:hover, .horas__hora--deshabilitada:hover, .horas__hora--seleccionada:hover {
+.product__contenedor:hover {
   cursor: pointer;
 }
-.horas__hora--seleccionada {
+.product__contenedor--seleccionada {
   background-color: #007df4;
   color: #FFFFFF;
 }
-.horas__hora--deshabilitada {
+.product__contenedor--deshabilitada {
   border: 1px solid #64748B;
   color: #64748B;
   opacity: 0.5;
 }
-.horas__hora--deshabilitada:hover {
+.product__contenedor--deshabilitada:hover {
   cursor: not-allowed;
 }
 
@@ -655,13 +655,10 @@ h3 {
 }
 
 .dashboard {
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: rgba(248, 250, 252, 0.3);
-}
-.dashboard__header {
-  background-color: rgba(30, 41, 59, 0.4);
-  padding: 1rem;
 }
 .dashboard__header-grid {
   display: flex;
@@ -875,6 +872,46 @@ h3 {
 }
 .sidebar__link--ir:hover {
   color: orange;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table__thead {
+  background-color: #1E293B;
+  color: #FFFFFF;
+}
+.table__th {
+  padding: 1rem;
+  text-align: left;
+}
+.table__tr:nth-of-type(even) {
+  background-color: #F8FAFC;
+}
+.table__td, .table__td--acciones {
+  padding: 1.5rem 1rem;
+}
+.table__td--acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+}
+.table__accion {
+  all: unset;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.table__accion--editar {
+  color: #007df4;
+}
+.table__accion--eliminar {
+  color: rgb(169, 0, 0);
+}
+.table__accion:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */

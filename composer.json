@@ -20,6 +20,7 @@
         "phpmailer/phpmailer": "^6.5",
         "vlucas/phpdotenv": "^5.4",
         "intervention/image": "^2.7",
-        "ext-mysqli": "*"
+        "ext-mysqli": "*",
+        "tinymce/tinymce": "^6.7"
     }
 }
