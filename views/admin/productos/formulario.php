@@ -38,6 +38,11 @@
                     value="<?php echo $producto->precio ?? ''; ?>"
             >
         </div>
+        <div id="divBarCode" class="forms__barcode forms__barcode--ds forms__listado">
+            <div id="printCode" class="forms__barcode-print">
+                <svg id="barcode"></svg>
+            </div>
+        </div>
         <div class="forms__campo">
             <label for="stock" class="forms__label">Stock</label>
             <input
@@ -70,16 +75,18 @@
                     name="imagen"
             >
         </div>
-        <?php if(isset($producto->imagen_actual)) { ?>
-            <p class="formulario__texto">Imagen Actual:</p>
-            <div class="formulario__imagen">
-                <picture>
-                    <source srcset="<?php echo $_ENV['HOST'] . '/img/Articulos/' . $producto->imagen; ?>.webp" type="image/webp">
-                    <source srcset="<?php echo $_ENV['HOST'] . '/img/Articulos/' . $producto->imagen; ?>.png" type="image/png">
-                    <img src="<?php echo $_ENV['HOST'] . '/img/Articulos/' . $producto->imagen; ?>.png" alt="Imagen Articulo">
-                </picture>
-            </div>
-        <?php } ?>
+        <div class="forms__campo">
+            <?php if(isset($producto->imagen_actual)) { ?>
+                <p class="forms__texto">Imagen Actual:</p>
+                <div class="forms__imagen">
+                    <picture>
+                        <source srcset="<?php echo $_ENV['HOST'] . '/img/Articulos/' . $producto->imagen; ?>.webp" type="image/webp">
+                        <source srcset="<?php echo $_ENV['HOST'] . '/img/Articulos/' . $producto->imagen; ?>.png" type="image/png">
+                        <img src="<?php echo $_ENV['HOST'] . '/img/Articulos/' . $producto->imagen; ?>.png" alt="Imagen Articulo">
+                    </picture>
+                </div>
+            <?php } ?>
+        </div>
     </div>
 </fieldset>
 

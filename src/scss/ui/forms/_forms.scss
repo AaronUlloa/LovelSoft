@@ -89,5 +89,9 @@
             border-radius: 2rem;
         }
     }
-
+    &__barcode{
+        &--ds{
+            display: none;
+        }
+    }
 }

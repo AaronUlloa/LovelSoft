@@ -484,6 +484,9 @@ h3 {
   width: 100%;
   border-radius: 2rem;
 }
+.forms__barcode--ds {
+  display: none;
+}
 
 .actions, .actions--centrar {
   margin-top: 3rem;
